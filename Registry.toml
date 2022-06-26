@@ -5,5 +5,6 @@ description = "My private registry"
 
 [packages]
 2372c442-b35b-4f55-9072-8f560a2e4af6 = { name = "PyPlotUtility", path = "P/PyPlotUtility" }
+90310099-bf61-4d54-b5c8-6de8580b0bfc = { name = "SpectralCRsUtility", path = "S/SpectralCRsUtility" }
 c94b82ce-bc6a-4c64-9fc0-cb2d7d683713 = { name = "DSAModels", path = "D/DSAModels" }
 fbea1840-634b-4ffc-8c6c-e633f751f78a = { name = "AnalyticMHDTestSolutions", path = "A/AnalyticMHDTestSolutions" }
