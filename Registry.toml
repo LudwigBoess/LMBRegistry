@@ -1,0 +1,6 @@
+name = "LMBRegistry"
+uuid = "0c4e8672-f216-4338-9186-156e36c305c9"
+repo = "https://github.com/LudwigBoess/LMBRegistry"
+description = "My private registry"
+
+[packages]
