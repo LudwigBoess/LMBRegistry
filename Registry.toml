@@ -5,3 +5,4 @@ description = "My private registry"
 
 [packages]
 c94b82ce-bc6a-4c64-9fc0-cb2d7d683713 = { name = "DSAModels", path = "D/DSAModels" }
+fbea1840-634b-4ffc-8c6c-e633f751f78a = { name = "AnalyticMHDTestSolutions", path = "A/AnalyticMHDTestSolutions" }
