@@ -4,3 +4,4 @@ repo = "https://github.com/LudwigBoess/LMBRegistry"
 description = "My private registry"
 
 [packages]
+c94b82ce-bc6a-4c64-9fc0-cb2d7d683713 = { name = "DSAModels", path = "D/DSAModels" }
