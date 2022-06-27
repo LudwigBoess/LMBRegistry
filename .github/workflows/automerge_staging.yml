@@ -44,7 +44,7 @@ jobs:
             ${{ runner.os }}-test-${{ env.cache-name }}-
             ${{ runner.os }}-test-
             ${{ runner.os }}-
-      - run: julia --color=yes -e 'import Pkg; Pkg.Registry.add("General")'
+      - run: julia --color=yes -e 'import Pkg; Pkg.Registry.add("General"); Pkg.Registry.add(Pkg.RegistrySpec(url = "https://github.com/LudwigBoess/LMBRegistry.git"))'
         env:
           JULIA_PKG_SERVER: ""
       - run: julia --color=yes -e 'import Pkg; Pkg.Registry.update()'
@@ -78,12 +78,12 @@ jobs:
             new_jll_version_waiting_period = Minute(10),
             registry = "JuliaRegistries/General",
             tagbot_enabled = true,
-            authorized_authors = String["JuliaRegistrator"],
-            authorized_authors_special_jll_exceptions = String["jlbuild"],
+            authorized_authors = String["LudwigBoess"],
+            authorized_authors_special_jll_exceptions = String[""],
             suggest_onepointzero = false,
             additional_statuses = String[],
             additional_check_runs = String[],
             check_license = true,
-            public_registries = String["https://github.com/HolyLab/HolyLabRegistry"],
+            public_registries = String["https://github.com/LudwigBoess/LMBRegistry"],
           )
         shell: julia --color=yes --project=.ci/ {0}
